@@ -4,12 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table</title>
+    <style>
+        table{
+            border-spacing: 0;
+            /* 겹치는 부분이 겹쳐지게 */
+            border-collapse: collapse; 
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
    <table>
     <tr>
-        <ta>A</ta>
-        <ta>B</ta>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+    </tr>
+   </table> 
+   <hr>
+   <table>
+    <tr>
+        <td colspan="3">A</td>
+        
+        
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+    </tr>
+   </table> 
+   <hr>
+   <table>
+    <tr>
+        <td rowspan="2">G</td>
+        <td>B</td>
+        <td>C</td>
+        
+    </tr>
+    <tr>
+        <td>E</td>
+        <td>F</td>
+    </tr>
+   </table> 
+   <hr>
+   <table>
+    <caption>Resume</caption>
+    <tr>
+        <td rowspan="3"><img src="./images/profile_1.jpg"</td>
+        <th>이름</td>
+        <td>정고은</td>
+        <th>MBTI</td>
+        <td>INFJ</td>
+        
+    </tr>
+    <tr>
+        <th>주소</td>
+        <td colspan="3">C</td>
+
+    </tr>
+    <tr>
+        <th>전화번호</td>
+        <td>010-1234-1234</td>
+        <th>생일</td>
+        <td>04.26</td>
     </tr>
    </table> 
 </body>
