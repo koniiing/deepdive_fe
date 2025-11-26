@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="./css/reset.css">
     <style>
         * {
             margin: 0;
@@ -33,27 +34,38 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 20px 0 10px;
+            margin: 20px 30px 10px;
+
         }
 
         .submenu h2 {
             font-size: 20px;
             font-weight: 700;
+
         }
 
         .submenu p {
             font-size: 14px;
             color: #666;
             cursor: pointer;
+            text-decoration: none;
+
+        }
+        .submenu .arrow {
+            width: 12px;
+            margin-left: 4px;
         }
 
         ul {
             display: flex;
             flex-direction: row;
+            padding: 30px;
+
 
         }
 
         li {
+            width: 194px;
             display: flex;
             gap: 12px;
             padding: 12px;
@@ -72,11 +84,13 @@
             flex-direction: column;
             justify-content: center;
             margin-top: 12px;
+            
         }
 
         .description .author {
             font-size: 10px;
             font-weight: 500;
+            text-decoration: none;
 
             color: #888;
         }
@@ -86,16 +100,44 @@
             font-weight: 500;
             margin: 8px 0;
             padding: 0 0 3px;
+            text-decoration: none;
+
         }
 
         .description .price {
             font-size: 18px;
             font-weight: 700;
         }
-        img.icon {
-            width: 12px;
-            object-fit: cover;
+        .collection-text img {
+        width: 79px;
+
         }
+        .collection-text .icon {
+            width: 12px;
+        }
+        .collection-text{
+            background-color: #faf7e1;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            border-radius: 10px;
+            padding: 6px 20px;
+            margin: 30px;
+            height: 80px;
+            width: 453px;;
+        }
+        .collection-text .left {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+
+        .collection-text p {
+            font-size: 16px;
+            font-weight: 700;
+
+        }
+        
     </style>
 </head>
 <body>
@@ -109,7 +151,7 @@
 <section>
     <div class="submenu">
         <h2>인기 굿-즈</h2>
-        <p>더보기 ></p>
+        <p>더보기<img class="arrow" src="./images/arrow_r.svg"></p>
     </div>
 
     <ul>
@@ -117,8 +159,8 @@
             <a href="#"><img src="./images/irangi_5.png" alt="thumbnail"></a>
             <div class="description">
                 <a href="#">
-                <p class="title">블루 아카이브 티파티 엔틱 찻잔</p>
-                <p class="price">29,700원</p></a>
+                <p class="title">블루 아카이브 티파티 엔틱 찻잔</p></a>
+                <p class="price">29,700원</p>
             </div>
         </li>
         <li>
@@ -126,13 +168,13 @@
             <div class="description">
                 <a href="#"><p class="author">임모지</p></a>
                 <a href="#">
-                <p class="title">블루 아카이브 티파티 엔틱 찻잔</p>
-                <p class="price">29,700원</p></a>
+                <p class="title">블루 아카이브 티파티 엔틱 찻잔</p></a>
+                <p class="price">29,700원</p>
             </div>
         </li>
     </ul>
-    <a href="#">
-    <div class="collection-text"><p>무료 스티커 모음집</p><img class="icon" src="./images/arrow_r.svg"></div></a>
+    <a class="collection-text" href="#">
+    <div class="left"><p>무료 스티커 모음집</p><img class="icon" src="./images/arrow_r.svg"></div><img src="./images/irangi_1.png"></a>
 </section>
 
 </body>
