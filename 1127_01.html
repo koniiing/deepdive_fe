@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f3f4f5;
+        }
+
+       .container {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    line-height: 2;
+    margin: 50px auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    min-height: 400px;
+}
+
+
+
+        .top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 40px;
+            padding: 20px;
+            background-color: rgb(1, 115, 149);
+            color: black;
+            text-decoration: none;
+        }
+        
+        
+.btn {
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+   
+}
+
+.btn-left {
+     display: flex;
+    align-items: center;
+    position: absolute;  
+    transform: translateY(-50%); 
+    background-color: black;
+    left: -50px; 
+    top:calc(50%-50px)
+}
+
+.btn-left2 {
+     display: flex;
+    align-items: center;
+    position: absolute;  
+    transform: translateY(-50%); 
+    background-color: black;
+    left: -30px; 
+    top:calc(50%-50px)
+}
+
+.btn-right {
+     display: flex;
+    align-items: center;
+    position: absolute;  
+    top:calc(50%-50px);
+    background-color: black;
+    right: -50px;
+}
+
+.btn-center {
+     display: flex;
+    align-items: center;
+    position: absolute;  
+    top:calc(50%-50px);
+    background-color: black;
+left: calc(50%-50px);}
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem sapiente possimus totam unde
+            nihil
+            quae vel voluptate, in autem illo eveniet deserunt quos enim! Molestias consectetur odit qui minus.
+            Consectetur assumenda vero deserunt, vitae tempore dolor officia dolorem odit eum velit deleniti iusto
+            delectus
+            iure
+            voluptatem similique ea fugiat voluptas quidem itaque sapiente suscipit repellat? Nesciunt temporibus
+            recusandae
+            deserunt.
+        </p>
+        
+        <a class="top btn" href=""#>top</a>
+        <button type="button" class="btn-left btn">Left</button>
+        <button type="button" class="btn-left2 btn">Left2</button>
+
+        <button type="button" class="btn-right btn">Right</button>
+        <button type="button" class="btn-center btn">Center</button>
+
+    </div>
+</body>
+
+</html>
