@@ -1,0 +1,25 @@
+const users=[
+    {name:"David",point:50},
+    {name:"Juliet",point:150},
+    {name:"Mike",point:250},
+]
+const vips=users.filter((user)=> user.point>=100);
+console.log(vips);
+
+const newVips=vips.map(vip=> ({...vip,point:vip.point*2}));
+console.log(newVips);
+
+
+const obj1={name:"ghost",age:500};
+const obj2={mbti:"INFJ"};
+const friends={...obj1,...obj2};
+console.log(friends);
+
+const newFriend={...friends,age:1000};
+console.log(newFriend);
+
+
+const array1=[1,2,3];
+const array2=[4,5,6];
+const numbers=[...array1,...array2];
+
