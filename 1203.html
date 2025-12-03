@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>My Tasks</h1>
+
+        <input type="text" id="task">
+        <button type="button" id="addTask">ADD +</button>
+        <ul id="ul"></ul>
+    </div>
+    <script>
+        const input=document.getElementById('task')
+        const btnAdd=document.getElementById('addTask')
+        let taskList=[];
+        btnAdd.addEventListener("click",()=>{
+            //taskList.push(input.value)
+            const newTask = input.value;
+            if(!newTask) return;
+            taskList.push(newTask);
+            readerTasks()
+
+            input.value='';
+
+            
+            
+            
+        })
+
+    function readerTasks(){
+        ul.innerHTML='';
+        taskList.forEach(task =>{
+            const li=document.createElement('li')
+            li.textContent=task;
+            ul.appendChild(li)
+        })
+    }
+
+
+    </script>
+</body>
+</html>
